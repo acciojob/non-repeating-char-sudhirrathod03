@@ -9,9 +9,10 @@ function firstNonRepeatedChar(str) {
 	for(let ch of str){
 		if(map.get(ch) === 1) return ch
 	}
-	return -1;
+	return null;
 }
 
 const input = prompt("Enter a string");
+
 
 alert(firstNonRepeatedChar(input)); 
